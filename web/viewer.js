@@ -12440,7 +12440,7 @@ var PDFPageView = /*#__PURE__*/function () {
           div.appendChild(textLayerDiv);
         }
 		
-        textLayer = this.textLayerFactory.createTextLayerBuilder(textLayerDiv, this.id - 1, this.viewport, this.textLayerMode === _ui_utils.TextLayerMode.ENABLE_ENHANCE, this.eventBus);
+        textLayer = this.textLayerFactory.createTextLayerBuilder(textLayerDiv, this.id - 1, false/*this.viewport, this.textLayerMode === _ui_utils.TextLayerMode.ENABLE_ENHANCE*/, this.eventBus);
       }
 	  
       this.textLayer = textLayer;
